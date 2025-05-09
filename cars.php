@@ -1,12 +1,6 @@
 <?php
 require_once('settings.php'); 
 
-$conn = mysqli_connect($host, $user, $pwd, $sql_db);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
 $sql = "SELECT * FROM cars";
 $result = mysqli_query($conn, $sql);
 
